@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Three Types of CSS</title>
+
+    <!-- Internal CSS -->
+    <style>
+        .internal-section {
+            background-color: lightgreen;
+            padding: 20px;
+            margin: 20px;
+            border: 3px solid green;
+        }
+    </style>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <h1>Three Types of CSS Example</h1>
+
+    <!-- Inline CSS  -->
+    <div style="background-color: lightblue; padding:20px; margin:20px; border:3px solid blue;">
+        <h2>Inline CSS</h2>
+        <p>This section is styled using INLINE CSS directly inside the HTML tag.</p>
+    </div>
+
+    <!-- Internal CSS  -->
+    <div class="internal-section">
+        <h2>Internal CSS</h2>
+        <p>This section is styled using INTERNAL CSS inside the &lt;style&gt; tag.</p>
+    </div>
+
+    <!-- External CSS  -->
+    <div class="external-section">
+        <h2>External CSS</h2>
+        <p>This section is styled using an EXTERNAL CSS file.</p>
+    </div>
+
+</body>
+</html>
