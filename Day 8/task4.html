@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 4</title>
+    <style>
+        .check{
+            display: none;
+        }
+        .menu-check{
+            background-color: black;
+            color: aqua;
+            margin: 10px;
+            border:10px solid rgb(57, 48, 48);
+            cursor: pointer;
+        }
+        .menu-list {
+            display: none;
+            
+           
+        }
+        a{
+            display: block;
+            text-decoration: none;
+            padding:9px;
+        }
+        .check:checked + .menu-check + .menu-list {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <input type="checkbox" class="check" id="menu">
+    <label class="menu-check" for="menu">Menus</label>
+
+    <div class="menu-list">
+        <a href="">Home </a>
+        <a href="">service </a>
+        <a href="">About us </a>
+    </div>
+</body>
+</html>
