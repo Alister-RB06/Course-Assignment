@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hover Effects Combined</title>
+    <style>
+        /* General */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 40px;
+}
+
+/* 1. Button hover color change */
+.btn {
+    background-color: blue;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    margin-bottom: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: red;
+}
+
+/* 2 & 3. Card grow + color + shadow */
+.card {
+    width: 220px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    background-color: #f0f8ff;
+    transform: scale(1.05);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+
+    </style>
+</head>
+<body>
+
+    <h1>Hover Effects Demo</h1>
+
+    <!-- 1. Button -->
+    <button class="btn">Hover Me</button>
+
+    <!-- 2 & 3. Card -->
+    <div class="card">
+        <h2>Hover Card</h2>
+        <p>This card grows, changes color & shadow.</p>
+    </div>
+
+   
+
+</body>
+</html>
