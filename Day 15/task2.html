@@ -1,0 +1,14 @@
+<label for="name" id="name"></label>
+<input name="name" id="box">
+<p id="output"></p>
+
+<script>
+    let label=document.getElementById("name");
+    let box=document.getElementById("box");
+    let output = document.getElementById("output");
+
+box.addEventListener ("input", ()=>
+    {
+      output.textContent=box.value;
+    })
+</script>

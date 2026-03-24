@@ -1,0 +1,22 @@
+<form id="form">
+    <label for="name" id="name">user Name</label> <br>
+    <input name="name" id="box">
+     <button type="submit">Submit</button>
+    <p id="output"></p>
+</form>
+
+<script>
+    let form= document.getElementById("form");
+    let box= document.getElementById("box");
+    let output = document.getElementById("output");
+
+    
+    form. addEventListener("submit", function(event)
+{
+     event.preventDefault();
+
+     let box=document.getElementById("box").value;
+     output.textContent="Hello " + box;
+})
+
+</script>
