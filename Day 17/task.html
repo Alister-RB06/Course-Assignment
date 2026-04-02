@@ -1,0 +1,27 @@
+    <script>
+        //map
+        let arr1=[2,2,3,6,8,9];
+        let result=     arr1.map(value=> value*2);
+        console.log(result);
+
+        //filter
+        let arr2=[2,7,8,5,4,9,8,9,0]
+        let result1=arr2.filter(value=> value%2==0);
+        console.log(result1)
+
+        //find
+        let arr3= [2,7,8,5,4,9,8,9,0,26,27,37]
+        let result2=arr3.find(value=> value>10);
+        console.log(result2);
+
+        //includes
+        let arr4=[10,37,38,737,373,736];
+        let result3=arr4.includes(78);
+        console.log(result3);
+
+        //sum
+        let arr5=[10,37,38,737,373,736];
+        let result4=arr5.reduce((x,y)=> x+y,0);
+        console.log(result4);
+
+    </script>
