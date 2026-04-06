@@ -1,0 +1,40 @@
+!DOCTYPE html>
+<html>
+<body>
+
+    <h2>Supplement Status Checker</h2>
+    <button id="check-btn">Check  Status</button>
+    
+    <div id="status-display" style="margin-top: 20px; font-weight: bold;">
+        Click the button to check...
+    </div>
+
+    <script>
+       let btn= document.getElementById("check-btn");
+       let display= document.getElementById("status-display");
+
+       btn.addEventListener('click',()=>{display.innerHTML="Status Checkig...";
+         let supplement=new Promise((resolve, reject)=>{
+            issupplementcoming=true;
+            setTimeout(()=>{
+                if (issupplementcoming){
+                    resolve ("Your supplement is Delivied")
+                }
+                else {
+                    reject ("your delivery is failed")
+                }
+            }, 2000)
+         })
+
+         supplement
+         .then((message)=>{
+            display.innerHTML=message;
+         })
+
+         .catch((error) => {
+                    display.innerHTML = error;
+       
+              
+       }) 
+
+       }) 
