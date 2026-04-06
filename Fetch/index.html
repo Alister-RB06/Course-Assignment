@@ -1,0 +1,23 @@
+<h2>User Data</h2>
+  <button class="button">Click Here to see the User Details</button>
+  <div class="display"></div>
+
+
+
+  <script>
+    let button= document.querySelector(".button");
+    let result= document.querySelector(".display");
+    button.addEventListener('click',()=>{result.innerHTML="Loading..."
+
+
+    fetch("https://jsonplaceholder.typicode.com/users/1")
+    .then(response=>{return response.json();
+    })
+    .then (data=>{
+        result.innerHTML=`<strong>Name: ${data.name}<br> UserName: ${data.username}<br> Email: ${data.email}<br> City: ${data.address.city}</strong>`;
+    })
+     .catch(error=>{
+         result.innerHTML="SOmething happened please try again";
+     });
+      });
+      </script>
