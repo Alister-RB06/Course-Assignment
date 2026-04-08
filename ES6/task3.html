@@ -1,0 +1,22 @@
+<script>
+
+    // arrow function
+        const add = (a, b) => a + b;
+    console.log(add(2, 3)); 
+
+    //constructor
+    class Car {
+  constructor(brand, price) {
+    this.brand = brand;
+    this.price = price;
+  }
+
+  details() {
+    return `${this.brand} costs ₹${this.price}`;
+  }
+}
+
+const car1 = new Car("Hyundai", 800000);
+
+console.log(car1.details());
+</script>
